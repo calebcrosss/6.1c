@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building with Maven!!!!!'
+                echo 'Building with Maven!'
             }
         }
         
@@ -15,7 +15,7 @@ pipeline {
             post {
                 success {
                     emailext (
-                        subject: "Unit and integration tests success!!!!!!",
+                        subject: "Unit and integration tests success!!!",
                         body: "The JUnit and Selenium tests have beeen completed successfully.",
                         to: 'caleb.cc.cross@gmail.com',
                         attachLog: true
@@ -35,7 +35,7 @@ pipeline {
         
         stage('Code Analysis') {
             steps {
-                echo 'Performing Code Analysis with SonarQube'
+                echo 'Performing Code Analysis with SonarQube!!!!'
             }
         }
         
