@@ -55,7 +55,7 @@ pipeline {
                 
                 failure {
                     emailext (
-                        subject: "Security scan failed",
+                        subject: "Security scan failed :(",
                         body: "The OWASP ZAP security scans have failed.",
                         to: 'caleb.cc.cross@gmail.com',
                         attachLog: true
@@ -77,7 +77,7 @@ pipeline {
             post {
                 success {
                     emailext (
-                        subject: "Integration tests success",
+                        subject: "Integration tests success!!",
                         body: "The selenium integration tests on staging have beeen completed successfully.",
                         to: 'caleb.cc.cross@gmail.com',
                         attachLog: true
