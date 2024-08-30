@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building with Maven'
+                echo 'Building with Maven!!!!!'
             }
         }
         
         stage('Unit and Integration Tests') {
             steps {
-                echo 'Running Unit tests with Junit and Integration Selenium for integration testing'
+                echo 'Running Unit tests with Junit and Integration Selenium for integration testing!!!!!'
             }
             post {
                 success {
